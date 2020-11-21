@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Note 10 Lite</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Xiaomi_logo.svg/1024px-Xiaomi_logo.svg.png" alt="" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Specs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="button">Buy Now</button>
+        </div>
+        <div class="body">
+            <h1>Xiaomi Note 10 Lite</h1>
+            <!-- <h1 class="h1">Epic Camera, Epic Display</h1> -->
+            <img class="image" src="white.png" alt="">
+
+        </div>
+        <ul class="thumb">
+            <li><img src="white.png" onclick="imgSlider('white.png');changeBgColor('#E5E9EC');changeTextColor('#000')" alt="White" /></li>
+            <li><img src="black.png" onclick="imgSlider('black.png');changeBgColor('#232E21');changeTextColor('#fff')" alt="Black" /></li>
+            <li><img src="purple.png" onclick="imgSlider('purple.png');changeBgColor('#392F5A');changeTextColor('#f0f')" alt="Purple" /></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.image').src = anything;
+        }
+
+        function changeBgColor(color) {
+            const sec = document.querySelector('.body');
+            sec.style.background = color;
+
+        }
+
+        function changeTextColor(color) {
+            const col = document.querySelector('.body');
+            col.style.color = color;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    justify-content: flex-end;
+    transition: all 0.5s;
+}
+
+.body {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background: #E5E9EC;
+    transition: all 500ms;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: -100px;
+    backdrop-filter: blur(15px);
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    top: -10px;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    padding: 10px;
+    z-index: 2;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a {
+    position: relative;
+    top: 15px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ff5100;
+}
+
+nav ul li {
+    transition: transform 500ms;
+}
+
+.button {
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    outline: none;
+    transition: background-color 500ms;
+}
+
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 50px;
+    padding: 20px;
+    border: 2px solid;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a:hover {
+    padding: 10;
+    border-bottom: 1px solid #000;
+}
+
+.button:hover {
+    background-color: #f0f;
+}
+
+.image {
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    transition: 500ms;
+}
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.thumb li img {
+    max-width: 60px;
+}
